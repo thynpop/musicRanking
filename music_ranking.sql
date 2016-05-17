@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 17, 2016 at 08:40 AM
+-- Generation Time: May 17, 2016 at 09:16 AM
 -- Server version: 5.6.25
 -- PHP Version: 5.6.11
 
@@ -53,7 +53,7 @@ CREATE TABLE IF NOT EXISTS `playlist` (
 
 CREATE TABLE IF NOT EXISTS `recordlabel` (
   `recordLabelID` int(20) NOT NULL,
-  `recordLabelName` varchar(50) NOT NULL
+  `recordLabelName` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -64,7 +64,7 @@ CREATE TABLE IF NOT EXISTS `recordlabel` (
 
 CREATE TABLE IF NOT EXISTS `singer` (
   `singerID` int(20) NOT NULL,
-  `singerName` varchar(20) NOT NULL,
+  `singerName` text NOT NULL,
   `recordLabelID` int(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -78,7 +78,7 @@ CREATE TABLE IF NOT EXISTS `song` (
   `songID` int(20) NOT NULL,
   `songName` text NOT NULL,
   `typeID` int(20) NOT NULL,
-  `link` varchar(50) NOT NULL,
+  `link` text NOT NULL,
   `vote` int(20) NOT NULL,
   `singerID` int(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -91,7 +91,7 @@ CREATE TABLE IF NOT EXISTS `song` (
 
 CREATE TABLE IF NOT EXISTS `type` (
   `typeID` int(20) NOT NULL,
-  `type` varchar(20) NOT NULL
+  `type` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -102,11 +102,11 @@ CREATE TABLE IF NOT EXISTS `type` (
 
 CREATE TABLE IF NOT EXISTS `user` (
   `userID` int(20) NOT NULL,
-  `username` varchar(50) NOT NULL,
-  `password` int(20) NOT NULL,
-  `facebook` varchar(20) NOT NULL,
-  `email` varchar(20) NOT NULL,
-  `twitter` varchar(20) NOT NULL
+  `username` text NOT NULL,
+  `password` text NOT NULL,
+  `facebook` text NOT NULL,
+  `email` text NOT NULL,
+  `twitter` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
