@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>mem
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Bootstrap Advance Admin Template</title>
-    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
 
     <!-- BOOTSTRAP STYLES-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
@@ -45,128 +44,130 @@
                 <ul class="nav" id="main-menu">
                     <li>
                         <div class="user-img-div">
-                            <center><img src="C:\Users\Splice_NB\Desktop\Year3\DatabaseY3\project final\rere\b.jpg" class="img-thumbnail" width="100" height="100" /></center>
+                            <center><img src="C:\xampp\htdocs\final\b.jpg" class="img-thumbnail" width="100" height="100" /></center>
 
-                            
                         </div>
-
-                    </li>
-
-
-                   <li>
-                        <a href="index.html"><i class="fa fa-dashboard "></i>Dashboard</a>
                     </li>
                     <li>
-                        <a href="#"  class="active-menu-top"><i class="fa fa-edit "></i>Form <span class="fa arrow"></span></a>
-                         <ul class="nav nav-second-level collapse in">
-                            <li>
-                                <a href="staffregister.html"><i class="fa fa-circle-o"></i>Staff register</a>
-                            </li>
-                            <li>
-                                <a href="Branch.html"><i class="fa fa-circle-o "></i>Branch</a>
-                            </li>
-                             <li>
-                                <a href="OrderLineItem.html"><i class="fa fa-circle-o "></i>Order line item</a>
-                            </li>
-                             <li>
-                                <a href="StepOfFood.html"><i class="fa fa-circle-o "></i>Step of food</a>
-                            </li>
-                             <li>
-                                <a href="Promotion.html"><i class="fa fa-circle-o "></i>Promotion</a>
-                            </li>
-                             <li>
-                                <a href="Stock.html"><i class="fa fa-circle-o "></i>Stock</a>
-                            </li>
-                             <li>
-                                <a href="Comment.html"><i class="fa fa-circle-o "></i>Comment</a>
-                            </li>
-                             <li>
-                                <a href="Member.html"><i class="fa fa-circle-o "></i>Member</a>
-                            </li>
-                            <li>
-                                <a href="Menutest.php"><i class="fa fa-circle-o "></i>Menu</a>
-                            </li>
-                           
-                        </ul>
+                        <a  href="SpliceRecommendMenu.php"><i class="fa fa-dashboard "></i>Recommend menu</a>
                     </li>
-                     <li>
-                        <a href="#"><i class="fa fa-yelp "></i>Report<span class="fa arrow"></span></a>
+                    <li>
+                    <a href="#"><i class="fa fa-edit "></i>Customer <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+
+
+                    <li>
+                        <a  href="HighCaloryReport.php"><i class="fa fa-dashboard "></i>Calory rank</a>
+                    </li>
+
+                    <li>
+                        <a href="OrderLineItem2.php"><i class="fa fa-yelp "></i>Order Here <span class="fa arrow"></span></a>
                          <ul class="nav nav-second-level">
                             <li>
-                                <a href="Recieve.html"><i class="fa fa-circle-o"></i>Recieve</a>
+                                <a href="OrderLineItemtest2.php"><i class="fa fa-circle-o"></i>Add order</a>
                             </li>
                             <li>
-                                <a href="OrderList.html"><i class="fa fa-circle-o "></i>Order list</a>
+                                <a href="OrderLineItemReport.php"><i class="fa fa-circle-o"></i>Your order</a>
                             </li>
-                             <li>
-                                <a href="StepOfFoodReport.html"><i class="fa fa-circle-o "></i>Step of food report</a>
-                            </li>
-                             <li>
-                                <a href="BranchReport.html"><i class="fa fa-circle-o "></i>Branch report</a>
-                            </li>
-                            
-                             <li>
-                                <a href="PromotionReport.html"><i class="fa fa-circle-o "></i>Promotion report</a>
-                            </li>
-                            
-                           
                         </ul>
                     </li>
+
                     <li>
-                        <a href="table.html"><i class="fa fa-edit "></i>Menu<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="menutest.php"><i class="fa fa-circle-o"></i>Add menu</a>
-                            </li>
-                            <li>
-                                <a href="OrderList.html"><i class="fa fa-circle-o "></i>Menu list</a>
-                            </li>
-                             <li>
-                                <a class="active-menu" href="MenuReport.php"><i class="fa fa-circle-o "></i>Menu report</a>
-                            </li>
-                        </ul>
+                        <a  href="Comment.html"><i class="fa fa-dashboard "></i>Comment</a>
                     </li>
-                  
-                     <li>
-                        <a href="gallery.html"><i class="fa fa-anchor "></i>Order<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
+                </ul>
+            </li>    
+
+
+
+
+
+
+                    <li>
+                        <a href="#"><i class="fa fa-edit "></i>Back End <span class="fa arrow"></span></a>
+                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="Recieve.html"><i class="fa fa-circle-o"></i>Add order</a>
+                                <a href="#"><i class="fa fa-yelp "></i>Menu <span class="fa arrow"></span></a>
+                                 <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="Menutest.php"><i class="fa fa-circle-o"></i>Add menu</a>
+                                    </li>
+                                    <li>
+                                        <a href="tbmenu.html"><i class="fa fa-circle-o"></i>Menu list</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <li>
+                                <a href="listorder.html"><i class="fa fa-circle-o"></i>Update food status here</a>
+                            </li>
+                                
+                            <li>
+                                <a href="Invoice.html"><i class="fa fa-circle-o"></i>Check out</a>
                             </li>
                             <li>
-                                <a href="OrderList.html"><i class="fa fa-circle-o "></i>Order list</a>
+                                <a href="#"><i class="fa fa-yelp "></i>Staff Register <span class="fa arrow"></span></a>
+                                 <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="staffregister.html"><i class="fa fa-circle-o"></i>Regis here</a>
+                                    </li>
+                                    <li>
+                                        <a href="tbstaff.html"><i class="fa fa-circle-o"></i>Staff list</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li>
+                                <a href="CirculationEachDayReport.php"><i class="fa fa-circle-o "></i>Circulation in each day</a>
                             </li>
                              <li>
-                                <a href="StepOfFoodReport.html"><i class="fa fa-circle-o "></i>Order report</a>
+                                <a href="CommentReport.php"><i class="fa fa-circle-o "></i>All Comment</a>
                             </li>
+                             <li>
+                                <a href="CustomerInDayReport.php"><i class="fa fa-circle-o "></i>Customer each day</a>
+                            </li>
+                             <li>
+                                <a href="MostUsedStockReport.php"><i class="fa fa-circle-o "></i>Most used ingredient</a>
+                            </li>
+                            <li>
+                                <a href="OftenComeReport.php"><i class="fa fa-circle-o "></i>Customer often come..people</a>
+                            </li>
+                             <li>
+                                <a href="OrderPerDayReport.php"><i class="fa fa-circle-o "></i>Order per day</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-yelp "></i>Promotion <span class="fa arrow"></span></a>
+                                 <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="Promotion.html"><i class="fa fa-circle-o"></i>Add promotion</a>
+                                    </li>
+                                    <li>
+                                        <a href="PromotionReport.php"><i class="fa fa-circle-o"></i>All promotion</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="RateReport.php"><i class="fa fa-circle-o "></i>Rank comment rate</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#"><i class="fa fa-yelp "></i>Stock <span class="fa arrow"></span></a>
+                                 <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="Stocktest.php"><i class="fa fa-circle-o"></i>Add stock</a>
+                                    </li>
+                                    <li>
+                                        <a href="liststock.html"><i class="fa fa-circle-o"></i>Stock list</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                           
                         </ul>
                     </li>
                      
-                    <li>
-                        <a href="login.html"><i class="fa fa-sign-in "></i>Login Page</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-sitemap "></i>Multilevel Link <span class="fa arrow"></span></a>
-                         <ul class="nav nav-second-level ">
-                            <li>
-                                <a href="#"><i class="fa fa-bicycle "></i>Second Level Link</a>
-                            </li>
-                             <li>
-                                <a href="#"><i class="fa fa-flask "></i>Second Level Link</a>
-                            </li>
-                            <li>
-                                <a href="#">Second Level Link<span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a href="#"><i class="fa fa-plus "></i>Third Level Link</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-comments-o "></i>Third Level Link</a>
-                                    </li>
 
-                                </ul>
-
-                            </li>
                         </ul>
                     </li>
                    
@@ -177,11 +178,11 @@
 
         </nav>
         <!-- /. NAV SIDE  -->
-                <div id="page-wrapper">
+         <div id="page-wrapper">
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-head-line">Menu Report</h1>
+                        <h1 class="page-head-line">Invoice</h1>
                     </div>
                 </div>
                 <!-- /. ROW  -->
@@ -189,18 +190,39 @@
                     <div class="col-md-12">
                         <div class="panel panel-info">
 
+                            <div class="panel-heading">
+                             <label>Invoice report</label>
+                            </div>
+
 
 
                             <div class="panel-body">
                                 <!-- /. Splice edit php  -->
+                                <form id="songName" method="get" action="search1Q.php">
                                 <div class="row">
-                                    <div class="col-md-3">
-                                        <button type="button" id="ShowData" class="btn btn-primary btn-block btn-lg">
-                                            Click Here
-                                        </button>
+                                    <div class="col-md-4">
+                                        <label for="songName">Customer number</label>
+                                        <input type="text" class="form-control" id="songName" name="songName" placeholder="Enter customer number">
                                     </div>
                                 </div>
                                 </br>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                       <!--<button type="button" id="Query" class="btn btn-primary btn-block btn-lg">-->
+                                       <button type="submit" title="" class="add-author" id ="AddMore">Query</button>
+                                            
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div id="name">
+
+                            </div>
+
+                                </br>
+
+
                              <div class="table-responsive">
                                 <table class="table table-bordered table-striped table-responsive" id="Recommend">
                                     <thead>
@@ -216,17 +238,23 @@
                                     </tbody>
                                 </table>
                             </div>
+
+
+
+
+
                             </div>
-
-                            
-
-                            </form>
                             </div>
                         </div>
                         </div>
                     </div>
                 </div>
+                <!-- /. sPLICE  -->
             
+                
+                    <!-- /. ROW  -->
+            
+            </div>
             <!-- /. PAGE INNER  -->
         </div>
         <!-- /. PAGE WRAPPER  -->
@@ -265,20 +293,23 @@
 <script src="dist/js/app.min.js"></script>
 <script>
 
+  
+
 
 
 $(document).ready(function() {
 
-        $("#ShowData").on("click", function () {
+        $("#ShowData").on("click", function ()) {
             //$("#payment_table tbody > tr").remove();
+            var songName = new $('#songName').val();
             
-//console.log("rrrr");
+
            
             loadTs();
-            function loadTs(){
+            function loadTs(songName){
                 //$("#payment_table tbody > tr").remove();
                 var xmlhttp = new XMLHttpRequest();
-                var url = "../musicRanking/searchQ.php";
+                var url = "../musicRanking/search1Q.php";
                 
                 xmlhttp.onreadystatechange=function() {
                     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
@@ -317,8 +348,11 @@ $(document).ready(function() {
     });
 </script>
 
-
-
-
 </body>
 </html>
+
+
+
+
+mysqli_close($con);
+?>
