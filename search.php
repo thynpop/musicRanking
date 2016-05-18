@@ -290,7 +290,6 @@ $(document).ready(function() {
             }
 
             function showdailyTime (response) {
-                console.log("rrrr");
                 console.log(response);
                 var arr = JSON.parse(response);
                 console.log(arr);
@@ -313,17 +312,6 @@ $(document).ready(function() {
                         
                     }
 
-                    
-
-                    
-                    
-
-
-                /*for (i = 0; i < len; i++) {
-                 var id = arr[i].id;
-                 out += id + "<br>";
-                 }*/
-                //console.log(len);
             }
         });
     });
