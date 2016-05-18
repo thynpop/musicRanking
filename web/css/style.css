@@ -165,6 +165,22 @@ body{
 	-o-transition: background 0.2s ease;
 	-webkit-transition: background 0.2s ease;
 }
+.sub-header-center button[type="submit"]{
+	background: url(../images/top-nav.png) repeat-x;
+	border-bottom: 1px solid rgb(37, 37, 37);
+	padding: 11px 20px;
+	border:none;
+	color: #fff;
+	border-right: 1px solid rgba(9, 8, 8, 1);
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+	cursor:pointer;
+	outline: none;
+}
 /*----top-nav----*/
 .top-nav ul li{
 	display:inline-block;
