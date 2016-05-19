@@ -72,6 +72,7 @@
 									<th>SONG</th>
 									<th>SINGER</th>
 									<th>VOTE</th>
+									<th>PLAY</th>
 								</tr>
 							</thead>
 
@@ -81,7 +82,7 @@
 					$songName = $_GET["songName"]; //get input from search box
 
 					//show song name, singer name and vote from singer and song table that songname like an input
-					$result = mysqli_query($connection, "SELECT s.songName , si.singerName , s.vote
+					$result = mysqli_query($connection, "SELECT s.songName , si.singerName , s.vote, s.link
 						FROM singer si, song s 
 						WHERE s.singerID = si.singerID
 						AND s.songName LIKE '$songName%' ");
@@ -91,32 +92,44 @@
 					while($current = mysqli_fetch_assoc($result))
 					{
 						echo "<tr>";
-						echo "<td>" . $current["songName"] . "</td>" ;
+						echo "<td>" . $current["songName"] . "</td>";
 						echo "<td>" . $current["singerName"] . "</td>";
 						echo "<td>" . $current["vote"] . "</td>";
+						echo '<td> <a href="showmv.php">PLAY</a> </td>';
 						echo "</tr>";
 					}
 					echo json_encode($json);
 					mysqli_close($connection);
+
+					
+
 					//show song name, singer name and vote from singer and song table that singername like an input      
 					$connection = mysqli_connect("localhost","root","","music_ranking");
-					$result1 = mysqli_query($connection, "SELECT s.songName , si.singerName , s.vote
+					$result1 = mysqli_query($connection, "SELECT s.songName , si.singerName , s.vote, s.link
 						FROM singer si,song s WHERE s.singerID = si.singerID
-						AND si.singerName LIKE '$songName%'  ");
+						AND si.singerName LIKE '$songName%' ");
 
 					$json = array();
 					//loop for print the information       
 					while($current1 = mysqli_fetch_assoc($result1))
 					{
 						echo "<tr>";
-						echo "<td>" . $current1["songName"] . "</td>" ;
+						echo "<td>" . $current1["songName"] .  "</td>";
 						echo "<td>" . $current1["singerName"] . "</td>";
 						echo "<td>" . $current1["vote"] . "</td>";
+						echo '<td> <a href="showmv.php">PLAY</a> </td>';
 						echo "</tr>";
 					}
 					echo json_encode($json);
 					mysqli_close($connection);
 					?>
+
+
+
+
+ 
+</script>
+
 
 
 				</table>
