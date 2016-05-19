@@ -225,7 +225,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 		</div>
 		<!---End-wrap-->
-		<script src="js/player.js"></script>
+		<script type="text/javascript">
+			  var tag = document.createElement('script');
+			  tag.src = "https://www.youtube.com/player_api";
+			  var firstScriptTag = document.getElementsByTagName('script')[0];
+			  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+			  var player;
+			  function onYouTubePlayerAPIReady() {
+			    player = new YT.Player('ytplayer', { height: '390', width: '640', videoId: data });
+			  }
+		</script>
 	</body>
 </html>
 

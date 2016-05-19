@@ -1,10 +1,8 @@
 <?php
-<<<<<<< HEAD
+
 $connection = mysqli_connect("localhost","root","","music_ranking");
-  $data = $_GET["data"];
-=======
+
   $data = $_GET["link"];
->>>>>>> 3da8f859c7d490e296573e310c45010d276ac6cf
 
 
   echo '<script type="text/javascript">';
@@ -15,6 +13,9 @@ $connection = mysqli_connect("localhost","root","","music_ranking");
 
 ?>
 <div id ="ytplayer"></div>
+
+
+
 <script type="text/javascript" >
 
 console.log(data)
@@ -32,6 +33,10 @@ console.log(data)
 
 
 </script>
+
+
+
+
 <?php
 $connection = mysqli_connect("localhost","root","","music_ranking");
 $result1 = mysqli_query($connection, "SELECT s.songName , si.singerName , s.vote
