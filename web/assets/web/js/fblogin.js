@@ -106,7 +106,6 @@ var $res =0;
     console.log(JSON.stringify(response));
     //document.getElementById('status').innerHTML = 'Thanks for logging in, ' + $name + '!';
     document.getElementById("profile").src = $profilePic;
-    console.log($profilePic);
     });
     function redirect() {
       window.location = '/web/index.html';
