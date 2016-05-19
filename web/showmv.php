@@ -1,6 +1,10 @@
 <?php
+<<<<<<< HEAD
 $connection = mysqli_connect("localhost","root","","music_ranking");
   $data = $_GET["data"];
+=======
+  $data = $_GET["link"];
+>>>>>>> 3da8f859c7d490e296573e310c45010d276ac6cf
 
 
   echo '<script type="text/javascript">';
