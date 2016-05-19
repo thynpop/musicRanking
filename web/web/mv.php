@@ -110,14 +110,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 												            FROM singer si,song s WHERE s.singerID = si.singerID
 												            AND s.link = '$data' ");
 												$current1 = mysqli_fetch_assoc($result1);
-												        echo '<p><h5> '.$current1['songName'].' </h5></p>';
-												        echo '<p><h5> '.$current1['singerName'].' </h5></p>';
+												        echo '<p><h2> '.$current1['songName']. '&nbsp - &nbsp' .$current1['singerName'].'</h2></p>';
 												        echo '<p><h5>VOTE : '.$current1['vote'].' </h5></p>';
 												mysqli_close($connection);
 												?>
-
+										<h4>share on:</h4>
 								        <div class="product-share">
-									<h3>share on:</h3>
 									<ul>
 										<li><a href="#"><img src="images/facebook.png" title="facebook" /></a></li>
 										<li><a href="#"><img src="images/twitter.png" title="Twitter" /></a></li>
