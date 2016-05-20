@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 19, 2016 at 09:42 AM
+-- Generation Time: May 20, 2016 at 08:22 AM
 -- Server version: 5.6.25
 -- PHP Version: 5.6.11
 
@@ -78,7 +78,7 @@ CREATE TABLE IF NOT EXISTS `singer` (
   `singerID` int(20) NOT NULL,
   `singerName` text NOT NULL,
   `recordLabelID` int(20) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `singer`
@@ -90,7 +90,16 @@ INSERT INTO `singer` (`singerID`, `singerName`, `recordLabelID`) VALUES
 (3, 'Ploychompoo', 4),
 (4, 'Stamp', 3),
 (5, 'The bottom blues', 6),
-(6, 'Jessie J', 6);
+(6, 'Jessie J', 6),
+(7, 'Jason Mraz', 6),
+(8, 'Tata young', 1),
+(9, 'Bruno Mars', 3),
+(10, 'Singular', 1),
+(11, 'Season Five', 5),
+(12, 'Atom', 6),
+(13, 'Paradox', 3),
+(14, 'Silly Fools', 3),
+(15, 'Mild', 3);
 
 -- --------------------------------------------------------
 
@@ -105,7 +114,7 @@ CREATE TABLE IF NOT EXISTS `song` (
   `link` text NOT NULL,
   `vote` int(20) NOT NULL,
   `singerID` int(20) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `song`
@@ -114,7 +123,25 @@ CREATE TABLE IF NOT EXISTS `song` (
 INSERT INTO `song` (`songID`, `songName`, `typeID`, `link`, `vote`, `singerID`) VALUES
 (1, 'Flashlight', 8, 'DzwkcbTQ7ZE', 176, 6),
 (2, 'Price Tag ft. B.o.B', 7, 'qMxX-QOV9tI', 54, 6),
-(3, 'Restart', 5, 'kTHcaTCM4rs', 5, 3);
+(3, 'Restart', 5, 'kTHcaTCM4rs', 5, 3),
+(4, 'Dhoom', 6, 'dYf0IRgblpA', 12, 8),
+(5, 'I''m yours', 5, 'EkHTsc9PU2A', 65, 7),
+(6, 'I want give up', 6, 'O1-4u9W-bns', 34, 7),
+(7, 'Sexy Naughty Bitchy me', 6, 'YIQnWeFpkJE', 100, 8),
+(8, 'The Lazy song', 1, 'fLexgOxsZu0', 65, 9),
+(9, 'Just the way you are', 2, 'LjhCEhWiKXk', 43, 9),
+(10, 'Bao Bao', 1, '7ebg2iLYakQ', 700, 10),
+(11, 'Long', 5, 'JFPbNzeEN_I', 56, 10),
+(12, 'Lhaek', 8, '61jjcnd884A', 43, 11),
+(13, 'Event', 8, 'w3POF1Coq5U', 600, 11),
+(14, 'Dust', 8, 'EEocnHtllJ8', 43, 12),
+(15, 'Please', 5, 'GYpzzbVRrsk', 90, 12),
+(16, 'Rue doo rhon', 8, '8k6C_3Q4S1o', 21, 13),
+(17, 'Mee tae ter', 5, 'PvB8ICbiZA4', 76, 13),
+(18, 'Jija', 8, '1hOzfYC-YCI', 12, 14),
+(19, 'Wat jai', 8, 'VNIE3VX1KeA', 89, 14),
+(20, 'Siyonara', 4, 'mMKwM_FYBOo', 1000, 15),
+(21, 'Unloveable', 6, 'Xj-UR1E8JlU', 78, 15);
 
 -- --------------------------------------------------------
 
@@ -232,12 +259,12 @@ ALTER TABLE `recordlabel`
 -- AUTO_INCREMENT for table `singer`
 --
 ALTER TABLE `singer`
-  MODIFY `singerID` int(20) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+  MODIFY `singerID` int(20) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=16;
 --
 -- AUTO_INCREMENT for table `song`
 --
 ALTER TABLE `song`
-  MODIFY `songID` int(20) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+  MODIFY `songID` int(20) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=22;
 --
 -- AUTO_INCREMENT for table `type`
 --
