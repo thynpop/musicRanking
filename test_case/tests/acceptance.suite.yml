@@ -4,15 +4,14 @@
 # Perform tests in browser using the WebDriver or PhpBrowser.
 # If you need both WebDriver and PHPBrowser tests - create a separate suite.
 
-class_name: AcceptanceTester
-
-
+#class_name: AcceptanceTester
 #modules:
  #   enabled:
   #      - PhpBrowser:
-   #         url: http://cpe333.musicranking.bagjns.in.th/web/
+   #        url: http://cpe333.musicranking.bagjns.in.th/web/
 modules:
     enabled:
         - WebDriver:
             url: http://cpe333.musicranking.bagjns.in.th/web/
             browser: chrome
+

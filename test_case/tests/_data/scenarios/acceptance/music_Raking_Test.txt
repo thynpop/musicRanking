@@ -1,0 +1,22 @@
+I WANT TO ENSURE THAT FRONTPAGE WORKS
+
+I am on page '/'
+I see current url equals '/login'
+I am on page '/index.html'
+I fill field 'Enter song name or singer name','Dust'
+I wait '2'
+I click 'SEARCH'
+I wait '2'
+I click '//*[@id="InvoiceTable"]/tbody/tr/td[4]/a'
+I wait '10'
+I fill field 'Enter song name or singer name','1'
+I wait '2'
+I click 'SEARCH'
+I wait '10'
+I fill field 'Enter song name or singer name','s'
+I wait '2'
+I click 'SEARCH'
+I wait '10'
+I click 'SEARCH'
+I wait '10'
+
