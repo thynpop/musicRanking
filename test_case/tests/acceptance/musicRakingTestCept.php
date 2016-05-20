@@ -8,23 +8,27 @@
 
 function test_login($I)
 {
-$I->amOnPage('/index.html');
+$I->amOnPage('/index.html'); 
  
+     //test enter song name 'Dust'
      $I->fillField('Enter song name or singer name','Dust');
 	   $I->wait('2');
+     //click search button
      $I->click('SEARCH');
      $I->wait('2');
-    
-     $I->wait('2');
+     //click play button
      $I->click('//*[@id="InvoiceTable"]/tbody/tr/td[4]/a');
      $I->wait('10');
+     //enter 1 in song name box
      $I->fillField('Enter song name or singer name','1');
-     $I->wait('2');  
+     $I->wait('2'); 
+     //click search button 
      $I->click('SEARCH');
      $I->wait('10');  
-
+     //enter song name = s
      $I->fillField('Enter song name or singer name','s');
      $I->wait('2');  
+     //click search button
      $I->click('SEARCH');
      $I->wait('10');  
 
