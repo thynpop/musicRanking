@@ -76,43 +76,50 @@
 								</tr>
 							</thead>
 
-							<!-- query for seach song and singer-->
-							<?php
+			<!-- query for seach song and singer-->
+			<?php
 			$connection = mysqli_connect("localhost","root","","music_ranking"); //connect to the music_ranking database
+			$songName = $_GET["songName"]; //get input from search box
 
-					$songName = $_GET["songName"]; //get input from search box
+			//select song name, singer name and vote from singer and song table that songname like an input
+			$result = mysqli_query($connection, "SELECT s.songName , si.singerName , s.vote, s.link
+				FROM singer si, song s 
+				WHERE s.singerID = si.singerID
+				AND s.songName LIKE '$songName%' ");
 
-					//show song name, singer name and vote from singer and song table that songname like an input
-					$result = mysqli_query($connection, "SELECT s.songName , si.singerName , s.vote, s.link
-						FROM singer si, song s 
-						WHERE s.singerID = si.singerID
-						AND s.songName LIKE '$songName%' ");
-if ($result->num_rows > 0) 
-		{
-					$json = array();
-					//loop for print the information       
-					while($current = mysqli_fetch_assoc($result))
+			
+			if($songName=="" )//check that user enter song/singer name or not
+				{
+				//print show that user has to input something before click search button
+				echo "<h2><center> please enter song name or singer name </center></h2>";
+				}
+			// if found the song that user search
+			else if ($result->num_rows > 0) 
+				{
+				$json = array();
+				//loop for print the information       
+				while($current = mysqli_fetch_assoc($result))
 					{
-						echo "<tr>";
-						echo "<td>" . $current["songName"] . "</td>";
-						echo "<td>" . $current["singerName"] . "</td>";
-						echo "<td>" . $current["vote"] . "</td>";
-						echo '<td> <a href="mv.php?data=' . $current["link"] . '">PLAY</a> </td>';
-						echo "</tr>";
+					echo "<tr>";
+					echo "<td>" . $current["songName"] . "</td>";
+					echo "<td>" . $current["singerName"] . "</td>";
+					echo "<td>" . $current["vote"] . "</td>";
+					echo '<td> <a href="mv.php?data=' . $current["link"] . '">PLAY</a> </td>';
+					echo "</tr>";
 					}
 					echo json_encode($json);
 					mysqli_close($connection);
 
 					//show song name, singer name and vote from singer and song table that singername like an input      
 					$connection = mysqli_connect("localhost","root","","music_ranking"); //connect to the music_ranking database
-
+					//select song name, singer name and vote from singer and song table that songname like an input(singername)
 					$result1 = mysqli_query($connection, "SELECT s.songName , si.singerName , s.vote, s.link
 						FROM singer si,song s WHERE s.singerID = si.singerID
 						AND si.singerName LIKE '$songName%' ");
 
 					$json = array();
 					//loop for print the information       
-					while($current1 = mysqli_fetch_assoc($result1))
+				while($current1 = mysqli_fetch_assoc($result1))
 					{
 						echo "<tr>";
 						echo "<td>" . $current1["songName"] .  "</td>";
@@ -124,22 +131,15 @@ if ($result->num_rows > 0)
 					echo json_encode($json);
 					mysqli_close($connection);
 
-		}
+				}
+			//if the song has not in database
+			else 
+				echo "<h2><center> Not found '$songName' </center></h2>";
 
-else 
-		echo "<h2><center> Not found '$songName' </center></h2>";
+			?>
 
-					?>
-
-
-
-
- 
-</script>
-
-
-
-				</table>
+			</script>
+			</table>
 			</div>
 
 					

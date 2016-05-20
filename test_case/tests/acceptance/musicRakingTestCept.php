@@ -10,16 +10,23 @@ function test_login($I)
 {
 $I->amOnPage('/index.html');
  
-$I->fillField('Enter song name or singer name','Dust');
-
+     $I->fillField('Enter song name or singer name','Dust');
 	   $I->wait('2');
      $I->click('SEARCH');
      $I->wait('2');
-     #$I->seeCurrentUrlEquals('/searchn.php');
+    
      $I->wait('2');
      $I->click('//*[@id="InvoiceTable"]/tbody/tr/td[4]/a');
      $I->wait('10');
-   #  $I->seeCurrentUrlEquals('/mv.html');
+     $I->fillField('Enter song name or singer name','1');
+     $I->wait('2');  
+     $I->click('SEARCH');
+     $I->wait('10');  
+
+     $I->fillField('Enter song name or singer name','s');
+     $I->wait('2');  
+     $I->click('SEARCH');
+     $I->wait('10');  
 
 
 }
