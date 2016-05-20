@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 18, 2016 at 10:24 AM
+-- Generation Time: May 19, 2016 at 09:42 AM
 -- Server version: 5.6.25
 -- PHP Version: 5.6.11
 
@@ -112,9 +112,9 @@ CREATE TABLE IF NOT EXISTS `song` (
 --
 
 INSERT INTO `song` (`songID`, `songName`, `typeID`, `link`, `vote`, `singerID`) VALUES
-(1, 'Flashlight', 8, 'https://www.youtube.com/watch?v=DzwkcbTQ7ZE', 176, 6),
-(2, 'Price Tag ft. B.o.B', 7, 'https://www.youtube.com/watch?v=qMxX-QOV9tI', 54, 6),
-(3, 'Restart', 5, 'https://www.youtube.com/watch?v=kTHcaTCM4rs', 5, 3);
+(1, 'Flashlight', 8, 'DzwkcbTQ7ZE', 176, 6),
+(2, 'Price Tag ft. B.o.B', 7, 'qMxX-QOV9tI', 54, 6),
+(3, 'Restart', 5, 'kTHcaTCM4rs', 5, 3);
 
 -- --------------------------------------------------------
 

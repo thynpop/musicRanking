@@ -1,3 +1,4 @@
+
 //global
 var $fbId =0;
 var $fname =0;
@@ -17,11 +18,16 @@ var $res =0;
     if (response.status === 'connected') {
       // Logged into your app and Facebook.
       showInformation();
+      //document.getElementById("loginButton").innerHTML = "log out";
+      //document.getElementById("loginButton").onclick = "fb_logout";
       //reload();
     } else if (response.status === 'not_authorized') {
       // The person is logged into Facebook, but not your app.
       //document.getElementById('status').innerHTML = 'Please log ' + 'into this app.';
+      document.getElementById("loginButton").innerHTML = "log in";
+
     } else {
+      document.getElementById("loginButton").innerHTML = "log in";
       // The person is not logged into Facebook, so we're not sure if
       // they are logged into this app or not.
       //document.getElementById('status').innerHTML = 'Please log ' + 'into Facebook.';
@@ -39,7 +45,7 @@ var $res =0;
 
   window.fbAsyncInit = function() {
   FB.init({
-    appId      : '{1212373392113632}',
+    appId      : '{1549087978734088}',//1212373392113632//1549318818711004//1604373076540538
     cookie     : true,  // enable cookies to allow the server to access 
                         // the session
     xfbml      : true,  // parse social plugins on this page
@@ -75,7 +81,7 @@ var $res =0;
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v2.6&appId=1549087978734088";
+  js.src = "//connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v2.6&appId=1212373392113632";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
@@ -85,19 +91,22 @@ var $res =0;
   // successful.  See statusChangeCallback() for when this call is made.
   function showInformation() {
     console.log('Welcome!  Fetching your information.... ');
-    FB.api('/me?fields=first_name,last_name,email,picture', function(response) {
+    FB.api('me?fields=email,first_name,last_name,picture', function(response) {
     $fbId = response.id;
     $fname = response.first_name;
     $lname = response.last_name;
-    $profilePic = picture;
+    $profilePic = response.picture.data.url;
     $email = response.email;
     console.log($fbId);
     console.log($fname);
     console.log($lname);
     console.log($email);
-    //console.log(JSON.stringify(response));
+    console.log($profilePic);
+    //console.log(response);
+    console.log(JSON.stringify(response));
     //document.getElementById('status').innerHTML = 'Thanks for logging in, ' + $name + '!';
-    //document.getElementById("profile").src = $profilePic;
+    document.getElementById("profile").src = $profilePic;
+    console.log($profilePic);
     });
     function redirect() {
       window.location = '/web/index.html';
@@ -105,4 +114,10 @@ var $res =0;
     //showInformation();
   }
 
-
+  function fb_logout() {
+    FB.logout(function(response) {
+   // Person is now logged out
+    window.location = '/web/login.html';
+    console.log("Logged out");
+    });
+  }

@@ -95,8 +95,7 @@
 						echo "<td>" . $current["songName"] . "</td>";
 						echo "<td>" . $current["singerName"] . "</td>";
 						echo "<td>" . $current["vote"] . "</td>";
-
-						echo '<td> <a href="showmv.php?data=' . $current["link"] . '">PLAY</a> </td>';
+						echo '<td> <a href="mv.php?data=' . $current["link"] . '">PLAY</a> </td>';
 						echo "</tr>";
 					}
 					echo json_encode($json);
@@ -118,7 +117,7 @@
 						echo "<td>" . $current1["songName"] .  "</td>";
 						echo "<td>" . $current1["singerName"] . "</td>";
 						echo "<td>" . $current1["vote"] . "</td>";
-						echo '<td> <a href="showmv.php?data=' . $current1["link"] . ' ">PLAY</a> </td>';
+						echo '<td> <a href="mv.php?data=' . $current1["link"] . ' ">PLAY</a> </td>';
 						echo "</tr>";
 					}
 					echo json_encode($json);
@@ -188,7 +187,7 @@
 			</div>
 			</div>
 		</div>
-		<!---End-wrap--->
+		<!---End-wrap-->
 	
 
 
