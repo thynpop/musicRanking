@@ -5,8 +5,14 @@
 # If you need both WebDriver and PHPBrowser tests - create a separate suite.
 
 class_name: AcceptanceTester
+
+
+#modules:
+ #   enabled:
+ #       - PhpBrowser:
+ #           url: http://127.0.0.1/musicRanking/
 modules:
     enabled:
         - WebDriver:
-            url: http://127.0.0.1/SPLICE/web/web/
+            url: http://127.0.0.1/musicRanking/
             browser: chrome
