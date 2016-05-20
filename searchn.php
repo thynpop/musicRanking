@@ -41,7 +41,6 @@
 				<div class="sub-header-right">
 					<ul>
 						<li><a href="#">log in</a></li>
-						<li><a href="#">Your account</a></li>
 					</ul>
 				</div>
 				<div class="clear"> </div>
@@ -75,6 +74,7 @@
 									<th>PLAY</th>
 								</tr>
 							</thead>
+
 
 			<!-- query for seach song and singer-->
 			<?php
@@ -111,8 +111,10 @@
 					mysqli_close($connection);
 
 					//show song name, singer name and vote from singer and song table that singername like an input      
+
 					$connection = mysqli_connect("localhost","root","","music_ranking"); //connect to the music_ranking database
 					//select song name, singer name and vote from singer and song table that songname like an input(singername)
+
 					$result1 = mysqli_query($connection, "SELECT s.songName , si.singerName , s.vote, s.link
 						FROM singer si,song s WHERE s.singerID = si.singerID
 						AND si.singerName LIKE '$songName%' ");
@@ -154,19 +156,13 @@
 					<h3>INFORMATION</h3>
 					<ul>
 						<li><a href="#">About us</a></li>
-						<li><a href="#">Sitemap</a></li>
 						<li><a href="#">Contact</a></li>
-						<li><a href="#">Terms and conditions</a></li>
-						<li><a href="#">Legal Notice</a></li>
 					</ul>
 				</div>
 				<div class="col_1_of_4 span_1_of_4">
 					<h3>OUR OFFERS</h3>
 					<ul>
-						<li><a href="#">New products</a></li>
-						<li><a href="#">top sellers</a></li>
 						<li><a href="#">Specials</a></li>
-						<li><a href="#">Products</a></li>
 						<li><a href="#">Comments</a></li>
 					</ul>
 				</div>
@@ -175,9 +171,6 @@
 					<ul>
 						<li><a href="#">Your Account</a></li>
 						<li><a href="#">Personal info</a></li>
-						<li><a href="#">Prices</a></li>
-						<li><a href="#">Address</a></li>
-						<li><a href="#">Locations</a></li>
 					</ul>
 				</div>
 				<div class="col_1_of_4 span_1_of_4 footer-lastgrid">
@@ -186,16 +179,11 @@
 						<li><a href="#"><img src="images/facebook.png" title="facebook"></a></li>
 						<li><a href="#"><img src="images/twitter.png" title="Twiiter"></a></li>
 						<li><a href="#"><img src="images/rss.png" title="Rss"></a></li>
-						<li><a href="#"><img src="images/gpluse.png" title="Google+"></a></li>
 					</ul>
-					<p>Design by <a href="#">W3layouts</a></p>
 				</div>
 			</div>
 			</div>
 			</div>
 		</div>
 		<!---End-wrap-->
-	
-
-
 </body></html>

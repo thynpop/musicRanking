@@ -192,10 +192,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				                    <!--  End  Striped Rows Table  -->
 				                </div>
 
-
-
-
-
 							</div>
 							<div class="clear"> </div>
 
@@ -214,7 +210,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<ul>
 						<li><a href="#">About us</a></li>
 						<li><a href="#">Contact</a></li>
-						<li><a href="#">Terms and conditions</a></li>
 					</ul>
 				</div>
 				<div class="col_1_of_4 span_1_of_4">
@@ -239,7 +234,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<li><a href="#"><img src="images/facebook.png" title="facebook" /></a></li>
 						<li><a href="#"><img src="images/twitter.png" title="Twiiter" /></a></li>
 						<li><a href="#"><img src="images/rss.png" title="Rss" /></a></li>
-						<li><a href="#"><img src="images/gpluse.png" title="Google+" /></a></li>
 					</ul>
 				</div>
 			</div>
