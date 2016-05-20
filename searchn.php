@@ -1,4 +1,6 @@
-<html><head>
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
@@ -12,6 +14,8 @@
     <link href="assets/css/custom.css" rel="stylesheet" />
     <!-- GOOGLE FONTS-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+      <!-- TABLE STYLES-->
+    <link href="assets/js/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
 	</head>
 	<body>
 		<!--start-wrap-->
@@ -30,7 +34,7 @@
 				<div class="sub-header-center">
 				<form id="songName" method="get" action="searchn.php"> 
 
-					<input type="text" class="form-control" id="songName" name="songName" placeholder="Enter song name or singer name">
+					<input type="text" class="form-control col-md-5" id="songName" name="songName" placeholder="Enter song name or singer name">
 					<button type="submit" title="" class="add-author" id ="AddMore">SEARCH</button>
 					<!--<input type="text"><input type="submit" id="songName" name="songName"  />-->
 				</form>
@@ -78,7 +82,9 @@
 
 			<!-- query for seach song and singer-->
 			<?php
-			$connection = mysqli_connect("localhost","root","","music_ranking"); //connect to the music_ranking database
+
+			$connection = mysqli_connect("localhost","bagjnsinth_mr","Cpe333","bagjnsinth_musicrank"); //connect to the music_ranking database
+
 			$songName = $_GET["songName"]; //get input from search box
 
 			//select song name, singer name and vote from singer and song table that songname like an input
@@ -112,7 +118,8 @@
 
 					//show song name, singer name and vote from singer and song table that singername like an input      
 
-					$connection = mysqli_connect("localhost","root","","music_ranking"); //connect to the music_ranking database
+					$connection = mysqli_connect("localhost","bagjnsinth_mr","Cpe333","bagjnsinth_musicrank"); //connect to the music_ranking database
+
 					//select song name, singer name and vote from singer and song table that songname like an input(singername)
 
 					$result1 = mysqli_query($connection, "SELECT s.songName , si.singerName , s.vote, s.link

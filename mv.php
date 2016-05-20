@@ -60,7 +60,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="sub-header-center">
 					<form id="songName" method="get" action="searchn.php"> 
 
-					<input type="text" class="form-control" id="songName" name="songName" placeholder="Enter song name or singer name">
+					<input type="text" class="form-control col-md-5" id="songName" name="songName" placeholder="Enter song name or singer name">
 					<button type="submit" title="" class="add-author" id ="AddMore">SEARCH</button>
 					<!--<input type="text"><input type="submit" id="songName" name="songName"  />-->
 				</form>
