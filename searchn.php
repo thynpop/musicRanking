@@ -78,7 +78,9 @@
 
 							<!-- query for seach song and singer-->
 							<?php
+
 					$connection = mysqli_connect("localhost","bagjnsinth_mr","Cpe333","bagjnsinth_musicrank"); //connect to the music_ranking database
+
 					$songName = $_GET["songName"]; //get input from search box
 
 					//show song name, singer name and vote from singer and song table that songname like an input
@@ -104,7 +106,9 @@
 					
 
 					//show song name, singer name and vote from singer and song table that singername like an input      
+
 					$connection = mysqli_connect("localhost","bagjnsinth_mr","Cpe333","bagjnsinth_musicrank"); //connect to the music_ranking database
+
 					$result1 = mysqli_query($connection, "SELECT s.songName , si.singerName , s.vote, s.link
 						FROM singer si,song s WHERE s.singerID = si.singerID
 						AND si.singerName LIKE '$songName%' ");

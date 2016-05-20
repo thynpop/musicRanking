@@ -97,7 +97,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 												<!--This one is function for play youtube-->
 												<?php
+
 					$connection = mysqli_connect("localhost","bagjnsinth_mr","Cpe333","bagjnsinth_musicrank"); //connect to the music_ranking database
+
 												  $data = $_GET["data"];
 												  echo '<script type="text/javascript">';
 												  echo "var data = '$data';"; 
@@ -105,7 +107,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 												?>
 												<div id ="ytplayer"></div>
 												<?php
+
 					$connection = mysqli_connect("localhost","bagjnsinth_mr","Cpe333","bagjnsinth_musicrank"); //connect to the music_ranking database
+
 												$result1 = mysqli_query($connection, "SELECT s.songName , si.singerName , s.vote
 												            FROM singer si,song s WHERE s.singerID = si.singerID
 												            AND s.link = '$data' ");
