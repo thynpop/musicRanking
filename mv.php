@@ -192,10 +192,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				                    <!--  End  Striped Rows Table  -->
 				                </div>
 
-
-
-
-
 							</div>
 							<div class="clear"> </div>
 
