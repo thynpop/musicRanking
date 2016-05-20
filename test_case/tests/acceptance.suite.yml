@@ -9,10 +9,10 @@ class_name: AcceptanceTester
 
 #modules:
  #   enabled:
- #       - PhpBrowser:
- #           url: http://127.0.0.1/musicRanking/
+  #      - PhpBrowser:
+   #         url: http://cpe333.musicranking.bagjns.in.th/web/
 modules:
     enabled:
         - WebDriver:
-            url: http://127.0.0.1/musicRanking/
+            url: http://cpe333.musicranking.bagjns.in.th/web/
             browser: chrome
